@@ -17,7 +17,7 @@ import org.openqa.selenium.support.FindBy;
  */
 public class DuckDuckGoResultPage extends Page {
     
-    @FindBy(css=".result__title")
+    private @FindBy(css=".result__title")
     List<WebElement> results;
     
     public DuckDuckGoResultPage(WebDriver driver) {
