@@ -22,9 +22,9 @@ public class TestDuckDuckGo {
     
     private WebDriver driver;
     
-    DuckDuckGoPage searchPage;
+    private DuckDuckGoPage searchPage;
     
-    DuckDuckGoResultPage resultPage;
+    private DuckDuckGoResultPage resultPage;
     
     @BeforeTest
     public void setUp() {
