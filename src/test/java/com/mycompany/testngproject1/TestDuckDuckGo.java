@@ -22,10 +22,6 @@ public class TestDuckDuckGo {
     
     private WebDriver driver;
     
-    private DuckDuckGoPage searchPage;
-    
-    private DuckDuckGoResultPage resultPage;
-    
     @BeforeTest
     public void setUp() {
         driver = new FirefoxDriver();
@@ -43,11 +39,11 @@ public class TestDuckDuckGo {
     public void testDuckDuckGo() {
         driver.get("https://www.duckduckgo.com");
         
-        searchPage = new DuckDuckGoPage(driver);
+        DuckDuckGoPage searchPage = new DuckDuckGoPage(driver);
         searchPage.setSearch("DuckDuckGo");
         searchPage.clickSearch(); // OR searchPage.button.click();
         
-        resultPage = new DuckDuckGoResultPage(driver);
+        DuckDuckGoResultPage resultPage = new DuckDuckGoResultPage(driver);
         
         Assert.assertFalse(resultPage.getResults().isEmpty());
     }
