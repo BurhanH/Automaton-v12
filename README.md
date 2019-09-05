@@ -2,6 +2,7 @@
 Automation framework (UI) - an example. Based on Java, Selenium, TestNG, PageFactory
 
 [![GitHub](https://img.shields.io/github/license/mashape/apistatus.svg)](https://github.com/BurhanH/automaton-v12/blob/master/LICENSE)
+[![Build Status](https://travis-ci.org/BurhanH/Automaton-v12.svg?branch=master)](https://travis-ci.org/BurhanH/Automaton-v12)
 
 ## Requirements
 JDK 12, TestNG 6.14.3, Selenium 3.141.59, <br>
