@@ -15,10 +15,10 @@ import org.openqa.selenium.support.FindBy;
  */
 public class DuckDuckGoPage extends Page {
     
-    @FindBy(id="search_form_input_homepage")
+    private @FindBy(id="search_form_input_homepage")
     WebElement search;
     
-    @FindBy(id="search_button_homepage")
+    private @FindBy(id="search_button_homepage")
     WebElement button;
     
     public DuckDuckGoPage(WebDriver driver) {
