@@ -9,7 +9,9 @@ import org.openqa.selenium.Dimension;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.Assert;
-import org.testng.annotations.*;
+import org.testng.annotations.BeforeTest;
+import org.testng.annotations.AfterTest;
+import org.testng.annotations.Test;
 
 import java.util.concurrent.TimeUnit;
 /**
@@ -19,10 +21,6 @@ import java.util.concurrent.TimeUnit;
 public class TestDuckDuckGo {
     
     private WebDriver driver;
-    
-    DuckDuckGoPage searchPage;
-    
-    DuckDuckGoResultPage resultPage;
     
     @BeforeTest
     public void setUp() {
@@ -41,11 +39,11 @@ public class TestDuckDuckGo {
     public void testDuckDuckGo() {
         driver.get("https://www.duckduckgo.com");
         
-        searchPage = new DuckDuckGoPage(driver);
+        DuckDuckGoPage searchPage = new DuckDuckGoPage(driver);
         searchPage.setSearch("DuckDuckGo");
         searchPage.clickSearch(); // OR searchPage.button.click();
         
-        resultPage = new DuckDuckGoResultPage(driver);
+        DuckDuckGoResultPage resultPage = new DuckDuckGoResultPage(driver);
         
         Assert.assertFalse(resultPage.getResults().isEmpty());
     }
