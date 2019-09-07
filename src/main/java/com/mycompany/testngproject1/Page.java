@@ -10,6 +10,6 @@ import org.openqa.selenium.WebDriver;
  *
  * @author baur
  */
-public class Page {
+public abstract class Page {
     public WebDriver driver;
 }
