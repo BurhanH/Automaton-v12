@@ -13,7 +13,7 @@ import org.openqa.selenium.support.FindBy;
  *
  * @author baur
  */
-public class DuckDuckGoPage extends Page {
+public final class DuckDuckGoPage extends Page {
     
     private @FindBy(id="search_form_input_homepage")
     WebElement search;
