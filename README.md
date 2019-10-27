@@ -8,7 +8,7 @@ Automation framework (UI) - an example. Based on Java, Selenium, TestNG, PageFac
 ## Requirements
 JDK 12, TestNG 6.14.3, Selenium 3.141.59, <br>
 Maven (software project management), <br>
-Firefox 69.*, geckodriver 0.24 <br>
+Firefox 70.*, geckodriver 0.26.0 <br>
 
 ## Project structure
 ```text
