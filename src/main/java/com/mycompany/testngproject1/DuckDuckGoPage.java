@@ -28,7 +28,7 @@ public final class DuckDuckGoPage extends Page {
         search.sendKeys(strText);
     }
     
-    public void Search() {
+    public void search() {
         search.sendKeys(Keys.ENTER);
     }
 }
