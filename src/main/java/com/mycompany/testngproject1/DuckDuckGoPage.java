@@ -9,17 +9,15 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.Keys;
 /**
  *
  * @author baur
  */
 public final class DuckDuckGoPage extends Page {
     
-    private @FindBy(id="search_form_input_homepage")
+    private @FindBy(css="#search_form_homepage_top > input.js-search-input.search__input--adv")
     WebElement search;
-    
-    private @FindBy(id="search_button_homepage")
-    WebElement button;
     
     public DuckDuckGoPage(WebDriver driver) {
         this.driver = driver;
@@ -30,7 +28,7 @@ public final class DuckDuckGoPage extends Page {
         search.sendKeys(strText);
     }
     
-    public void clickSearch() {
-        button.click();
+    public void Search() {
+        search.sendKeys(Keys.ENTER);
     }
 }
