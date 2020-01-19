@@ -41,7 +41,7 @@ public class TestDuckDuckGo {
         
         DuckDuckGoPage searchPage = new DuckDuckGoPage(driver);
         searchPage.setSearch("DuckDuckGo");
-        searchPage.Search();
+        searchPage.search();
         
         DuckDuckGoResultPage resultPage = new DuckDuckGoResultPage(driver);
         
