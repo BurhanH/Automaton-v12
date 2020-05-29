@@ -4,6 +4,8 @@ Automation testing framework (UI) - an example. Based on Java, Selenium, TestNG,
 [![GitHub](https://img.shields.io/github/license/mashape/apistatus.svg)](https://github.com/BurhanH/automaton-v12/blob/master/LICENSE)
 [![Build Status](https://travis-ci.org/BurhanH/Automaton-v12.svg?branch=master)](https://travis-ci.org/BurhanH/Automaton-v12)
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/2791a009671d43c390537517f776bc05)](https://www.codacy.com/app/BurhanH/Automaton-v12?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=BurhanH/Automaton-v12&amp;utm_campaign=Badge_Grade)
+[![HitCount](http://hits.dwyl.com/BurhanH/automaton-v12.svg)](http://hits.dwyl.com/BurhanH/automaton-v12)
+
 
 ## Requirements
 JDK 12, TestNG 6.14.3, Selenium 3.141.59, <br>
